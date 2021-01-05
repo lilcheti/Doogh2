@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="10dp"
+    android:visibility="gone"
+    android:id="@+id/lin"
+    >
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:srcCompat="@tools:sample/avatars" />
+    <ImageButton
+        android:id="@+id/playy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:translationX="-75dp"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+       />
+
+    <TextView
+        android:translationX="-30dp"
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAMEEEE"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/dlSeriesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/stat_sys_download"
+        android:visibility="gone"/>
+
+</LinearLayout>

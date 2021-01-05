@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="133dp"
+    android:layout_height="186dp"
+    android:layout_margin="5dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="4dp"
+    >
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="120px"
+        android:layout_height="wrap_content"
+        android:text="Movie Name"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:translationY="80px"
+        />
+    <ImageView
+        android:id="@+id/imagee"
+        android:layout_width="133dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_launcher_background"
+        />
+
+
+</androidx.cardview.widget.CardView>

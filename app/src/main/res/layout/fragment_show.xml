@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                tools:srcCompat="@tools:sample/avatars"
+                />
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_back"
+                android:id="@+id/backk"
+                android:background="@color/kk"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/namee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/meta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/rate"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginStart="5dp"
+            />
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/plot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/star"
+            android:textSize="16dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:layout_centerHorizontal="true"
+                    android:padding="7dp"/>
+                <TextView
+                    android:layout_below="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My List"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:clickable="true"
+                android:focusable="auto"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="right"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/serrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

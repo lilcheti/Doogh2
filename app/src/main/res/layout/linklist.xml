@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/clos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:background="@color/kk"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dess"
+        android:textSize="30sp"
+        android:text="List of available URLS"
+        android:layout_margin="30dp"
+        />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dess">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="choose a subtitle:"
+        android:layout_below="@+id/dess"
+        android:id="@+id/chooooose"
+        />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooooose"
+        android:checkedButton="@id/no"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Subtitle"
+            android:layout_marginLeft="5dp"
+            />
+    </RadioGroup>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linkList"
+        android:layout_below="@+id/radioGroup"
+        />
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

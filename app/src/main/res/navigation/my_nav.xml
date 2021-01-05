@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.milcrypto.doogh.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_home2_to_show"
+            app:destination="@id/show" />
+        <action
+            android:id="@+id/action_home2_to_mylist2"
+            app:destination="@id/mylist2" />
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.milcrypto.doogh.Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_search_to_show"
+            app:destination="@id/show" />
+    </fragment>
+    <fragment
+        android:id="@+id/downloads"
+        android:name="com.milcrypto.doogh.Downloads"
+        android:label="fragment_downloads"
+        tools:layout="@layout/fragment_downloads" />
+    <fragment
+        android:id="@+id/show"
+        android:name="com.milcrypto.doogh.Show"
+        android:label="fragment_show"
+        tools:layout="@layout/fragment_show" >
+    </fragment>
+    <fragment
+        android:id="@+id/mylist2"
+        android:name="com.milcrypto.doogh.Mylist"
+        android:label="fragment_mylist"
+        tools:layout="@layout/fragment_mylist" >
+        <action
+            android:id="@+id/action_mylist2_to_show"
+            app:destination="@id/show" />
+    </fragment>
+</navigation>
